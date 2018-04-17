@@ -3,9 +3,12 @@
 #include <iostream>
 #include <stdexcept>
 
+using namespace std;
+
 class String
 {
-
+	friend ostream &operator<<(ostream &, const String &);
+	friend istream &operator>>(istream &, String &);
 public:
 
 	String(const char *);
@@ -36,7 +39,7 @@ public:
 
 	bool operator>=(const String &) const;
 	
-	char &operator[](int) const;
+	char &operator[](int);
 
 private:
 	char * str;
@@ -175,14 +178,32 @@ inline bool String::operator>=(const String & str) const
 	return strcmp(this->GetString(), str.GetString()) >= 0;
 }
 
-inline char & String::operator[](int i) const
+inline char & String::operator[](int i)
 {
 	return str[i];
 }
 
+
+
+
 #pragma endregion
 
 
+ostream & operator<<(ostream & output, const String & str)
+{
+	output << str.GetString();
+	return output;
+}
+
+istream & operator>>(istream & input, String & str)
+{
+	char  temp[200];
+
+	input >> temp;
+	str = temp;
+
+	return input;
+}
 
 
 
