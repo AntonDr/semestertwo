@@ -1,0 +1,14 @@
+﻿  OwnerPhone.cpp
+  Source.cpp
+  Generating Code...
+Source.obj : error LNK2005: "public: __thiscall String::String(class String const &)" (??0String@@QAE@ABV0@@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "public: __thiscall String::String(char const *)" (??0String@@QAE@PBD@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "public: __thiscall String::~String(void)" (??1String@@QAE@XZ) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class String &)" (??5@YAAAV?$basic_istream@DU?$char_traits@D@std@@@std@@AAV01@AAVString@@@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class String const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVString@@@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "public: class String __thiscall String::operator+(class String const &)" (??HString@@QAE?AV0@ABV0@@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "public: class String __thiscall String::operator+=(class String const &)" (??YString@@QAE?AV0@ABV0@@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "private: static char * __cdecl String::AllocateMemory(char const *)" (?AllocateMemory@String@@CAPADPBD@Z) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "public: char * __thiscall String::GetString(void)const " (?GetString@String@@QBEPADXZ) already defined in OwnerPhone.obj
+Source.obj : error LNK2005: "private: void __thiscall String::SetString(char const *)" (?SetString@String@@AAEXPBD@Z) already defined in OwnerPhone.obj
+E:\semestertwo\D8\Debug\D8.exe : fatal error LNK1169: one or more multiply defined symbols found
